@@ -42,6 +42,7 @@ class AppContainer extends React.Component {
   };
 
   guessLetterHandler = event => {
+    event.preventDefault()
     if (this.state.currentChosenLetter.length > 0) {
       const newGuessedLetters = [...this.state.guessedLetters];
       newGuessedLetters.push(this.state.currentChosenLetter);
@@ -50,7 +51,7 @@ class AppContainer extends React.Component {
         currentChosenLetter: ""
       });
     }
-    event.preventDefault();
+    ;
   };
 
   componentDidMount = () => {

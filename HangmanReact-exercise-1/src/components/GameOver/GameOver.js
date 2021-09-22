@@ -3,6 +3,7 @@ import win from "../../assets/win.gif";
 import lose from "../../assets/lose.gif";
 
 const GameOver = props => {
+  console.log(props)
   const winResult = (
     <div className="win">
       <h2>You won!</h2>
@@ -18,7 +19,7 @@ const GameOver = props => {
     </div>
   );
 
-  return props.wordGuessed ? winResult : loseResult;
+  return props.wordGuesed ? winResult : loseResult;
 };
 
 export default GameOver;

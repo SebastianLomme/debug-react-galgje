@@ -10,8 +10,11 @@ import GuessesLeft from "../GuessesLeft/GuessesLeft";
 import WronglyGuessedLetters from "../WronglyGuessedLetters/WronglyGuessedLetters";
 
 const wordGuessed = (word, guessedLetters) => {
+  console.log("word", word)
+  console.log(guessedLetters)
   word = word.split("");
   const remaining = word.filter(letter => !guessedLetters.includes(letter));
+  console.log(remaining)
   return remaining.length === 0;
 };
 

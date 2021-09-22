@@ -36,7 +36,7 @@ const isGameOver = game => {
 };
 
 const getWrongLetters = (word, guessedLetters) =>
-  guessedLetters.filter(letter => !word.split("").includes(letter));
+guessedLetters.filter(letter => !word.split("").includes(letter));
 
 const App = props => {
   const game = props.game;
